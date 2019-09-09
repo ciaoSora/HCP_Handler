@@ -63,3 +63,8 @@ def check(param, username, homeworkid):
     url = part1 + param + part2 + username + part3 + homeworkid + part4
     r = session.get(url, headers = NORMAL_HEADERS)
     return json.loads(r.text)
+
+
+if __name__ == '__main__':
+    input("Please run client.py instead of this file\n")
+
